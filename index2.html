@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+<script>
+//경우에 따라 json형태를 띈 텍스트 데이터로 제공받는 경우도 있다 
+var data = "";
+
+data = data +"{";
+data = data+"\"name\":\"뽀미\",";
+data = data+ "\"age\":10";
+data = data+"}";
+//위의 데이터는 제이슨으로 표현된 스트링일 뿐 
+//제이슨오브젝트는 아니기때문에 파싱의 과정을 
+//거친후 객체로서 사용될 수 있다 
+var obj = JSON.parse(data);
+document.write(obj.name);
+
+JSON.stringfy()
+
+</script>    
+</head>
+<body></body>
+</html>
